@@ -1,0 +1,70 @@
+
+:root {
+    --Almost-White: #fafafa;
+    --Medium-Gray: #696969;
+    --Almost-Black: #141414;
+}
+
+/* - Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
+- Weights: 500, 700 */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.container {
+    width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.d-none {
+    display: none;
+}
+
+a {
+    color: var(--Almost-Black);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    height: 75px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+}
+
+.navbar--content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+/* Desktop Nav */
+.navbar--nav {
+    display: none;
+}
+
+.navbar--btns {
+    display: none;
+}
+
+@media only screen and (min-width: 980px) {
+
+}
