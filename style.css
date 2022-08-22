@@ -30,6 +30,13 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 980px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+/* Display Settings */
 .d-none {
   display: none;
 }
@@ -66,6 +73,7 @@ img {
 .btn-solid {
   padding: 10px 23px;
   border-radius: 15px;
+  border: 2px solid var(--Almost-Black);
   background-color: var(--Almost-Black);
   color: var(--Almost-White);
   display: inline-block;
@@ -73,12 +81,11 @@ img {
 
 .btn-solid:hover {
   background-color: var(--Almost-White);
-  border: 2px solid var(--Almost-Black);
   color: var(--Almost-black);
 }
 
 .btn-outline {
-  padding: 8px 65px;
+  padding: 10px 65px;
   border-radius: 15px;
   border: 2px solid var(--Medium-Gray);
   display: inline-block;
@@ -91,18 +98,13 @@ img {
 }
 
 /* Global Styles - Desktop */
-@media only screen and (min-width: 980px) {
-  .container {
-    padding: 0 40px;
-  }
-}
 
 /* Navbar Section */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: var(--Almost-Black);
   opacity: 0.8;
@@ -236,6 +238,15 @@ img {
   padding-bottom: 55px;
 }
 
+@media only screen and (min-width: 980px) {
+  .hero--img.mobile {
+    display: none;
+  }
+  .hero--img.desktop {
+    display: block;
+  }
+}
+
 .hero--text {
   text-align: center;
 }
@@ -253,5 +264,3 @@ img {
 .hero--logo:not(:last-child) {
   padding-right: 20px;
 }
-
-/* Hero Section - Desktop */
