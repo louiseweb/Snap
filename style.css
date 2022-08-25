@@ -25,13 +25,14 @@ body {
 }
 
 .container {
-  max-width: 1480px;
-  padding: 0 20px;
-  margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 980px) {
   .container {
+    max-width: 1220px;
     padding: 0 40px;
   }
 }
@@ -46,11 +47,25 @@ p {
   line-height: 26px;
 }
 
+@media only screen and (min-width: 980px) {
+  p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
 h1 {
   color: var(--Almost-Black);
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
+}
+
+@media only screen and (min-width: 980px) {
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
 }
 
 a {
@@ -234,33 +249,112 @@ img {
 }
 
 /* Hero Section */
+@media only screen and (min-width: 980px) {
+  .hero--content {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    /* height: auto; */
+  }
+}
+
 .hero--img {
   padding-bottom: 55px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+@media only screen and (min-width: 980px) {
+  .hero--img {
+    margin: unset;
+    
+  }
 }
 
 @media only screen and (min-width: 980px) {
   .hero--img.mobile {
     display: none;
   }
+
   .hero--img.desktop {
     display: block;
+    padding-bottom: 0px;
+    width: 480px;
+    height: 640px;
   }
 }
 
 .hero--text {
   text-align: center;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 980px) {
+  .hero--text {
+    text-align: left;
+    max-width: unset;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .hero--text h1 {
+    max-width: 540px;
+    margin-bottom: 52px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .hero--text p {
+    margin-bottom: 10px;
+    max-width: 475px;
+  }
 }
 
 .hero--btn {
   margin: 32px 0px 45px 0px;
 }
 
+@media only screen and (min-width: 980px) {
+  /* .hero--btn {
+    margin-bottom: 108px;
+  }  */
+}
+
 .hero--logos {
   display: flex;
   justify-content: space-between;
   height: 26px;
+  max-width: 478px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 980px) {
+  .hero--logos {
+    max-width: 478px;
+    margin: unset;
+    margin-bottom: 15px;
+  }
 }
 
 .hero--logo:not(:last-child) {
   padding-right: 20px;
+}
+
+
+
+/* Media Queries */
+@media only screen and (min-width: 980px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
 }
