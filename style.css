@@ -25,9 +25,9 @@ body {
 }
 
 .container {
-    max-width: 1140px;
-    padding: 0 20px;
-    margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 980px) {
@@ -255,8 +255,6 @@ img {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background-color: antiquewhite;
-    /* height: auto; */
   }
 }
 
@@ -269,7 +267,6 @@ img {
 @media only screen and (min-width: 980px) {
   .hero--img {
     margin: unset;
-    
   }
 }
 
@@ -348,13 +345,9 @@ img {
   padding-right: 20px;
 }
 
-
-
 /* Media Queries */
 @media only screen and (min-width: 980px) {
-
 }
 
 @media only screen and (min-width: 768px) {
-
 }
